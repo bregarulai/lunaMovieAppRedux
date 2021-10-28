@@ -3,10 +3,17 @@
 .header {
     background-color: $secondary-color;
     height: 7.2rem;
-    padding: 0 4rem;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+
+    &__container {
+        width: 100%;
+        max-width: 1400px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
 
     &__logo {
         color: $font-primary;

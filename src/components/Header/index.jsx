@@ -6,11 +6,13 @@ import "./header.scss";
 const Header = () => {
   return (
     <div className="header">
-      <Link to="/">
-        <div className="header__logo">Luna Movie App</div>
-      </Link>
-      <div className="header__user-image">
-        <img src={userImg} alt="" />
+      <div className="header__container">
+        <Link to="/">
+          <div className="header__logo">Luna Movie App</div>
+        </Link>
+        <div className="header__user-image">
+          <img src={userImg} alt="" />
+        </div>
       </div>
     </div>
   );

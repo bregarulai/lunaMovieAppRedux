@@ -18,7 +18,6 @@ const Home = () => {
         console.log("ERROR: ", err);
       });
     dispatch(addMovies(response.data));
-    console.log("RESPONSE: ", response);
   };
 
   useEffect(() => {
