@@ -1,7 +1,7 @@
 import React from "react";
 
 const MovieListing = () => {
-  return <div></div>;
+  return <div>Movie Listing</div>;
 };
 
 export default MovieListing;
