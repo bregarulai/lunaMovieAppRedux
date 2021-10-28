@@ -1,0 +1,46 @@
+@import "./common/colors.scss";
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    font-family: "Roboto", "sans-serif";
+}
+
+html {
+    font-size: 50%;
+
+    @media screen and (min-width: 900px) {
+        font-size: 56.25%;
+    }
+
+    @media screen and (min-width: 1200px) {
+        font-size: 62.5%;
+    }
+}
+
+body {
+    box-sizing: border-box;
+    font-size: $default-font-size;
+    background-color: $primary-color;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+.container {
+    margin: 0 4rem;
+}
