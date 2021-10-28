@@ -1,6 +1,7 @@
 import Axios from "axios";
-import * as process from "process";
+
+const baseUrl = process.env.REACT_APP_BASE_URL;
 
 export default Axios.create({
-  baseURL: process.env.REACT_APP_BASE_URL,
+  baseURL: baseUrl,
 });

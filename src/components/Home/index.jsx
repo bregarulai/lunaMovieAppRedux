@@ -1,18 +1,16 @@
 import React from "react";
 import { useEffect } from "react";
-import * as process from "process";
 
 import { MovieListing } from "../../components";
 import movieApi from "../../common/api/movieApi";
 
+const apiKey = process.env.REACT_APP_API_KEY;
+
 const Home = () => {
   const movieText = "Harry";
   const fetchMovies = async () => {
-    console.log("Key: ", process.env.REACT_APP_API_KEY);
-    console.log("Key: ", process.env.REACT_APP_BASE_URL);
-    console.log("Node: ", process.env.NODE_ENV);
     const response = await movieApi
-      .get(`?apikey=${process.env.API_KEY}&s=${movieText}&type=movie`)
+      .get(`?apikey=${apiKey}&s=${movieText}&type=movie`)
       .catch((err) => {
         console.log("ERROR: ", err);
       });
