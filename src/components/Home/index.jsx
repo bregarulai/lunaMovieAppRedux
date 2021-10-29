@@ -17,9 +17,11 @@ const Home = () => {
     dispatch(fetchAsyncMovies(movieText));
     dispatch(fetchAsyncShows(showText));
   }, [dispatch]);
+
   return (
     <div className="home">
       <div className="home__banner-img"></div>
+
       <MovieListing />
     </div>
   );
