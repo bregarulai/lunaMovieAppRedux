@@ -17,9 +17,38 @@
     }
 
     &__logo {
-        color: $font-primary;
-        font-size: 2rem;
-        font-weight: 700;
+
+        a {
+            color: $font-primary;
+            font-size: 2rem;
+            font-weight: 700;
+        }
+    }
+
+    &__search-bar {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+
+        form {
+            display: flex;
+            justify-content: center;
+            width: 70%;
+
+            button {
+              padding: 0 .8rem;
+              font-size: 2rem;
+              cursor: pointer; 
+              height: 3.8rem; 
+            }
+        }
+
+        input {
+            width: 100%;
+            padding: .5rem .5rem .5rem 1rem;
+            height: 3.8rem;
+            outline: none;
+        }
     }
 
     &__user-image {
