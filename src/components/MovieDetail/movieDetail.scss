@@ -1,1 +1,72 @@
 @import "../../common/colors.scss";
+
+.movie-detail {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 4rem 0;
+    color: $font-primary;
+    font-weight: 400;
+
+    &__title {
+        font-size: 4rem;
+        color: $font-primary;
+    }
+
+    &__rating {
+        padding-left: .3rem;
+        margin-top: 2rem;
+        color: $font-secondary;
+        display: flex;
+
+        span {
+            margin-right: 2rem;
+
+            .fa-star {
+                color: #ff9e00;
+            }
+            .fa-thumbs-up {
+                color: #fafafa;
+            }
+            .fa-film {
+                color: rgb(191, 213, 214);
+            }
+            .fa-calendar {
+                color: peachpuff;
+            }
+          
+        }
+    }
+
+    &__plot {
+        margin-top: 2rem;
+        line-height: 1.8rem;
+    }
+
+    &__info {
+
+        div {
+
+            span {
+                color: $font-secondary;
+
+                &:first-child{
+                    padding: 1rem 0;
+                    color: $font-primary;
+                    display: inline-block;
+                    font-weight: 600;
+                    width: 10rem;
+                }
+            }
+        }
+    }
+
+    &__right {
+        width: 100%;
+        margin-left: 3rem;
+
+        img {
+            width: auto;
+            height: 100%;
+        }
+    }
+}
