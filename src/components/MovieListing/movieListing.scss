@@ -3,6 +3,7 @@
 .movie-listing {
 
     &__list {
+        
         margin: 2rem 0;
         h2 {
             font-size: 2.6rem;
@@ -13,9 +14,9 @@
 
     }
 
-    &__container {
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(22rem, 1fr));
-        gap: 1.5rem;
-    }
+    // &__container {
+    //     display: grid;
+    //     grid-template-columns: repeat(auto-fill, minmax(22rem, 1fr));
+    //     gap: 1.5rem;
+    // }
 }
